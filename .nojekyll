@@ -1,0 +1,7 @@
+Serve these files exactly as they are.
+
+GitHub Pages runs Jekyll over a repo by default, which processes files on their way out.
+A card is a single self-contained HTML file whose payload is base64 ciphertext — there is
+nothing here to templatise, and anything that rewrites a byte of it breaks decryption
+(GCM authenticates: one changed byte and the card won't open at all). This file turns
+Jekyll off.
